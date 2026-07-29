@@ -1,0 +1,35 @@
+{
+    "$schema": "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
+    "version": "0.7.0",
+    "description": "Windows system tray app that monitors Kimi Code usage quotas and alerts before they run out",
+    "homepage": "https://github.com/JYH1878/KimiCodeBar-Windows",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/JYH1878/KimiCodeBar-Windows/releases/download/v0.7.0/KimiCodeBar_0.7.0_x64-portable.zip",
+            "hash": "b8dae93b11674159b36e21cf095b437f57d58bddbf23db4135b9a6bb44a15b40"
+        }
+    },
+    "bin": "kimicodebar.exe",
+    "shortcuts": [
+        [
+            "kimicodebar.exe",
+            "KimiCodeBar"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/JYH1878/KimiCodeBar-Windows",
+        "regex": "v([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/JYH1878/KimiCodeBar-Windows/releases/download/v$version/KimiCodeBar_$version_x64-portable.zip"
+            }
+        }
+    },
+    "notes": [
+        "Config and cache live in %APPDATA%\\KimiCodeBar\\ and survive Scoop updates.",
+        "首次运行可能被 SmartScreen 拦截：点击 \"更多信息\" → \"仍要运行\" 即可。"
+    ]
+}
