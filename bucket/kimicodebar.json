@@ -1,13 +1,13 @@
 {
     "$schema": "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
-    "version": "0.8.1",
+    "version": "0.8.2",
     "description": "Windows system tray app that monitors Kimi Code usage quotas and alerts before they run out",
     "homepage": "https://github.com/JYH1878/KimiCodeBar-Windows",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/JYH1878/KimiCodeBar-Windows/releases/download/v0.8.1/KimiCodeBar_0.8.1_x64-portable.zip",
-            "hash": "89e7e72a03e9fb4d9aa4a4ea523a48dca343d42e9467c221dfb993c8fc97e315"
+            "url": "https://github.com/JYH1878/KimiCodeBar-Windows/releases/download/v0.8.2/KimiCodeBar_0.8.2_x64-portable.zip",
+            "hash": "a25cb106fec429b5b88d5bff192998cf524c79ee5e6e86985786e41ceb85a1a7"
         }
     },
     "bin": "kimicodebar.exe",
